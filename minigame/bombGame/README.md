@@ -20,14 +20,11 @@
   bombGame
   
 ┣ css<br>
-┣ font
-  
-┣ images
-  
-┣ media
-  
-┣ script
-  
-┣ bomb.html
-  
-┗ minigame.html
+  ┣ bombstyle.css<br>
+  ┗ load.css<br>
+┣ font<br>
+┣ images<br>
+┣ media<br>
+┣ script<br>
+┣ bomb.html<br>
+┗ minigame.html<br>
