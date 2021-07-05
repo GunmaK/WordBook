@@ -18,9 +18,15 @@
   
 # 構造
   bombGame
-  ┣ css
-  ┣ font
-  ┣ images
-  ┣ media
-  ┣ bomb.html
-  ┗ minigame.html
+  
+┣ css
+  
+┣ font
+  
+┣ images
+  
+┣ media
+  
+┣ bomb.html
+  
+┗ minigame.html
