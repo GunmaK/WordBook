@@ -19,13 +19,14 @@
 # 構造
   bombGame
   
-┣ css
-  
+┣ css<br>
 ┣ font
   
 ┣ images
   
 ┣ media
+  
+┣ script
   
 ┣ bomb.html
   
