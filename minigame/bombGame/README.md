@@ -17,7 +17,7 @@
 * タイマーの効果音にラグがある -> onloadでmediaファイル内の効果音の読み込みができてないらしい-> ~~気にせん気にせん~~
   
 # 構造
-bombGame
+  bombGame
   ┣ css
     ┣ bombstyle.css
     ┗ load.css
