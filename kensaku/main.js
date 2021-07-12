@@ -20,18 +20,6 @@ $(function() {
   });
 });
 
-//ツールチップ
-$(function () {
-    //$('.tooltip').hide();
-    $('.search-del icon-rem').hover(
-    function () {
-        $(this).children('.tooltip').fadeIn('fast');
-    },
-    function () {
-        $(this).children('.tooltip').fadeOut('fast');
-    });
-});
-
 //検索機能
 const func1 = () => {
   var searchword = document.getElementById("SearchTxt").value;
