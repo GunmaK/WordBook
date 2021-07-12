@@ -29,53 +29,64 @@
     <script src="script/setting.js"></script>
     <!--オブジェクト----------------------------------------------------------------------------------->
     <div class="content">
-        <form id="strbtns">
-            <!--スタートボタン-->
-            <input type="button" id= "ankiBtn" onclick="this.blur();strGame();" value="記憶開始">
-            <input type="button" id= "kaijoBtn" style="display: none;" onclick="this.blur();setGame();" value = "解除開始">
-        </form>
-        <!--/strbtns-->
+        <div class="strbtns-contents">
+            <form class="strbtns">
+                <!--スタートボタン-->
+                <input type="text" class="strbtns-child" id="tm2" readonly value="">
+                <input type="button" class="strbtns-child" id= "ankiBtn" onclick="this.blur();strGame();" value="記憶開始">
+                <input type="button" class="strbtns-child" id= "kaijoBtn" style="display: none;" onclick="this.blur();setGame();" value = "解除開始">
+            </form>
+            <!--/strbtns-->
+        </div>
+        <div class="ankihyo" style="display: none;">
+            <form name="hyo">
+                <!--暗記表-->
+                <!--8個の英単語-日本語の表を作成-->
+                <div id="ankihyo">
+                    <input type="text" name="en" value="1eng" readonly>
+                    <input type="text" name="jp" value="1jpn" readonly>
+                    <input type="text" name="en" value="2eng" readonly>
+                    <input type="text" name="jp" value="2jpn" readonly>
+                    <input type="text" name="en" value="3eng" readonly>
+                    <input type="text" name="jp" value="3jpn" readonly>
+                    <input type="text" name="en" value="4eng" readonly>
+                    <input type="text" name="jp" value="4jpn" readonly>
+                    <input type="text" name="en" value="5eng" readonly>
+                    <input type="text" name="jp" value="5jpn" readonly>
+                    <input type="text" name="en" value="6eng" readonly>
+                    <input type="text" name="jp" value="6jpn" readonly>
+                    <input type="text" name="en" value="7eng" readonly>
+                    <input type="text" name="jp" value="7jpn" readonly>
+                    <input type="text" name="en" value="8eng" readonly>
+                    <input type="text" name="jp" value="8jpn" readonly>
+                </div>
+            </form>
+        </div>
+        <!--/hyo-->
     </div>
-    <div class="ankihyo">
-        <form name="hyo">
-            <!--暗記表-->
-            <input type="text" id="tm2" readonly value="">
-            <!--8個の英単語-日本語の表を作成-->
-            <div id="ankihyo" style="display: none;" >
-                <input type="text" name="en" value="1" readonly>
-                <input type="text" name="jp" value="1" readonly>
-                <input type="text" name="en" value="2" readonly>
-                <input type="text" name="jp" value="2" readonly>
-                <input type="text" name="en" value="3" readonly>
-                <input type="text" name="jp" value="3" readonly>
-                <input type="text" name="en" value="4" readonly>
-                <input type="text" name="jp" value="4" readonly>
-                <input type="text" name="en" value="5" readonly>
-                <input type="text" name="jp" value="5" readonly>
-                <input type="text" name="en" value="6" readonly>
-                <input type="text" name="jp" value="6" readonly>
-                <input type="text" name="en" value="7" readonly>
-                <input type="text" name="jp" value="7" readonly>
-                <input type="text" name="en" value="8" readonly>
-                <input type="text" name="jp" value="8" readonly>
-            </div>
-        </form>
-    </div>
-    <!--/hyo-->
     <!--結果表示-->
-    <form id="endfase" style="display: none;">
-        <input type="text" name="result" readonly value="result">
-        <input type="text" id="timeresult" readonly value="time result" style="display: none;">
-        <input type="text" id="missresult" readonly value="miss result" style="display: none;">
-    </form>
-    <!--もう一度、やめるボタン-->
-    <form name="rebtn" style="display: none;">
-        <input type="button" name="re" value="もういっかい！" onclick="location.href='bomb.html'">
-        <input type="button" name="back" value="やめる" onclick="location.href='minigame.html'">
-    </form>
+    <div class="content" style="display: none;">
+        <div class="endfase-contents">
+            <form id="endfase" style="display: none;">
+                <div class="endfase-re-flex">
+                    <input type="text" class="endfase-re-child" name="result" readonly value="result">
+                    <input type="text" class="endfase-re-child" id="timeresult" readonly value="time result" style="display: none;">
+                    <input type="text" class="endfase-re-child" id="missresult" readonly value="miss result" style="display: none;">
+                    <input type="text" class="endfase-re-child" id="scoreresult" readonly value="score result" style="display: none;">
+                </div>
+            </form>
+            <!--もう一度、やめるボタン-->
+            <form name="rebtn" style="display: none;">
+                <div class="endfase-rebtn-flex">
+                    <input type="button" name="re" value="もういっかい！" onclick="location.href='bomb.html'">
+                    <input type="button" name="back" value="やめる" onclick="location.href='minigame.html'">
+                </div>
+            </form>
+        </div>
+    </div>
     <div id="moduleObj" style="visibility: hidden;">
         <div class="obj-flex" id="moduleObj-flex" style="visibility:hidden">
-            <div class="content-flex">
+            <div class="contents-flex">
                 <div class="contents">
                     <div class="clearmodulepare">
                             <div class="clearmodule"></div>
@@ -116,10 +127,10 @@
                 </div>
                 <!--/contents-->
             </div>
-            <!--/content-flex-->
+            <!--/contents-flex-->
             <!--第2モジュール「並べ替え」----------------------------------------------------------------------->
             <!---->
-            <div class="content-flex">
+            <div class="contents-flex">
                 <div class="contents">
                     <div class="clearmodulepare">
                         <div class="clearmodule"></div>
@@ -193,7 +204,7 @@
                 </div>
                 <!--/contents-->
             </div>
-            <!--content-flex-->
+            <!--contents-flex-->
             <!--第4モジュール
             <form-- name="frmodule4" id="4module4">
 
@@ -213,14 +224,16 @@
         });
         StrDisplay();
         document.getElementById("tm2").value="制限時間：" + ankitime + "秒";
+
     };
     /*------------------------------------------*/
     /*          ゲーム進行処理                   */
     /*------------------------------------------*/
     /*-----------------暗記開始------------------*/
     function strGame (){
+        var elem= document.getElementsByClassName("ankihyo");
+        elem[0].style.display="block";
         document.getElementById("ankiBtn").style.display="none";//記憶開始ボタンを隠す
-        document.getElementById("ankihyo").style.display="block";//暗記表を表示
         document.getElementById("tm2").style.display="block";//タイマーを表示
         Dateset();//暗記表に単語データをセット
         strmemoTime = new Date().getTime();
@@ -232,7 +245,9 @@
 
     /*--------------解除開始---------------------*/
     function setGame(){
-        document.getElementById("strbtns").style.display="none";
+        var ContentDises = document.getElementsByClassName("content");
+        ContentDises[0].style.display="none";
+        document.getElementById("body-style").style.overflow="scroll";
         countvisit();
         document.getElementById("xc").value = "";
         document.getElementById("counter").value = "";
@@ -284,11 +299,17 @@
         var cleartime = (kaijotime - document.getElementById("tm").value).toString();
         clearInterval(timerID);
         cleartime=cleartime.substr(0,5);
+        var ContentDises = document.getElementsByClassName("content");
+        ContentDises[1].style.display="block";
         document.getElementById("timeresult").style.display="block";
         document.getElementById("timeresult").value="クリア時間：" + cleartime;
         document.getElementById("missresult").style.display="block";
         document.getElementById("missresult").value="ミス：" + misscount;
         document.getElementById("endfase").style.display="block";
+        document.getElementById("scoreresult").style.display="block";
+        var gamescore=(kaijotime - cleartime + Max_miss - misscount)*100;
+        gamescore=parseInt(gamescore,10);
+        document.getElementById("scoreresult").value="スコア：" + gamescore;
         document.getElementById("endfase").result.value = "CLEAR!";
         endGame();
         });
@@ -322,6 +343,8 @@
         for(var i=0;i<20;i++){
             document.getElementById("b" + i).disabled = true;
         }
+        var ContentDises = document.getElementsByClassName("content");
+        ContentDises[1].style.display="block";
         document.getElementById("endfase").style.display="block";
         document.getElementById("endfase").result.value = "GameOver";
         var bombaudio = new Audio('./media/bomb.mp3');

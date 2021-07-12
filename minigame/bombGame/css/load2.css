@@ -1,14 +1,15 @@
 /*----ロード画面----*/
 @font-face {
     font-family: 'azuki';
-    src: url(../font/azuki.ttf);
+    src: url(azuki.ttf);
 }
 
 /* Loading Block */
 #loading {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     background-color: #808080;
     top: 0;
     left: 0;
@@ -20,13 +21,17 @@
     text-align: center;
     width: 100%;
     margin: 60vh 0;
-
 }
 
 #loading a {
     font-family: 'azuki';
     font-size: 40px;
     animation: textblor 2s linear infinite;
+}
+
+/* Hide Loading Block */
+.loaded {
+    display: none;
 }
 
 /*animation*/
@@ -107,7 +112,7 @@
     border: 2px solid;
     background-image: linear-gradient(to top, #b22222 50%, #808080 50%);
     background-size: 200% 200%;
-    animation: bgcolor 5s forwards;
+    animation: bgcolor 5s ease forwards;
 }
 
 .bombnring-print .bombnring:nth-child(2)::after {
@@ -123,11 +128,12 @@
     border-radius: 20%;
     border-bottom: transparent;
     background-color: #808080;
-    transform: translate(48px, -2px)rotate(35deg);
+    transform: translate(48px, 0px)rotate(35deg);
+    z-index: 9995;
     background-image: linear-gradient(-35deg, #b22222 50%, #808080 50%);
-    background-size: 243% 654%;
-    animation: bgcolor 7500ms forwards;
-    animation-delay: 50ms;
+    background-size: 100% 360%;
+    animation: bgcolor 5s ease forwards;
+    animation-delay: 1650ms;
 }
 
 @keyframes bgcolor {
