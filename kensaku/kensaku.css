@@ -201,7 +201,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .search-wrp {
-  padding: 2rem 1rem 1rem;
+  padding: 4rem 3rem 3rem;
 }
 .is_search .search-wrp {
   background-color: #f0fdeb;
@@ -268,18 +268,19 @@ body {
 /* output */
 output[name="result1"]{
   position: relative;
+  border-bottom: solid 1px rgb(100, 100, 100);
   left: 12px;
   font-size: 200%;
 }
 output[name="result2"]{
   position: relative;
   left: 12px;
-  font-size: 200%;
+  font-size: 180%;
 }
 output[name="result3"]{
   position: relative;
   left: 12px;
-  font-size: 200%;
+  font-size: 180%;
 }
 #arrow{
   width: 4vw;
