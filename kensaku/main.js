@@ -29,8 +29,9 @@ const func1 = () => {
         var output1 = document.getElementById("output1");
         var output2 = document.getElementById("output2");
         var output3 = document.getElementById("output3");
-
+        var arrow = document.getElementById("arrow");
         output1.value = searchword;
+        arrow.style.display = "block";
 
         if (questions[i].part == 'noun') output2.value = '名詞';
         if (questions[i].part == 'verb') output2.value = '動詞';
@@ -45,3 +46,17 @@ const func1 = () => {
     }
     return false;
   }
+
+function EnglishAudio()
+{
+  const uttr = new SpeechSynthesisUtterance();
+  uttr.text=document.getElementById("output1").value;
+  var voice = speechSynthesis.getVoices().find(function(voice){
+      return voice.name === 'Google UK English Male';
+  });
+  var name= speechSynthesis.getVoices().find(function(voice){
+      return voice.name === 'Alex';
+  });
+  if(voice){uttr.voice=voice;}else if(name){uttr.voice=name;}else{uttr.lang="en-US";}
+  speechSynthesis.speak(uttr);
+}

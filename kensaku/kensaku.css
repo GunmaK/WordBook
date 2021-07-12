@@ -249,5 +249,13 @@ output[name="result3"]{
   left: 12px;
   font-size: 200%;
 }
-
+#arrow{
+  width: 4vw;
+  height: 4vw;
+  margin-left: 5vw;
+  border-radius: 50px;
+}
+.text-flex{
+  display: flex;
+}
 .ui-autocomplete { max-height: 200px; overflow-y: scroll; overflow-x: hidden;}

@@ -74,7 +74,7 @@ input[type="button"]:hover {
     border: 1px #000 solid;
     background-color: rgb(128, 128, 128,0.9);
     z-index: 9900;
-    margin: 10vw 10vw;
+    margin: 5vw 10vw;
 }
 .strbtns-contents{
     width: 100%;
