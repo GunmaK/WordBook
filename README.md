@@ -37,9 +37,10 @@ Root
   ┃    ┃  ┗ setting.js
   ┃    ┣ bomb.html
   ┃    ┗ minigame.html
-  ┣ [kennsaku]
-  ┣ 
-  ┣ 
-  ┗
+  ┗ kensaku
+    ┣ japanese.js
+    ┣ kensaku.css
+    ┣ kensaku.html
+    ┗ main.js
 ~~~
 </div></details>
