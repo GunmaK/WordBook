@@ -14,12 +14,46 @@ body {
   background-color: #fdf7eb;
 }
 /* Icon */
+.icon-rem {
+  position: relative;
+  text-indent: 110%;
+  white-space: nowrap;
+  border-radius: 10px;
+  margin-left: 5vw;
+  overflow: hidden;
+  color: #fff;
+  background-color: #333;
+}
+.icon-rem::before,
+.icon-rem::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  display: block;
+  height: .3rem;
+  width: 100%;
+  background-color: currentColor;
+  pointer-events: none;
+}
+
+.icon-rem::before {
+  transform: rotate(45deg);
+}
+
+.icon-rem::after {
+  transform: rotate(-45deg);
+}
 .icon-del {
   position: relative;
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
   color: #ccc;
+  background-color: #fff;
 }
 .icon-del::before, .icon-del::after {
   position: absolute;
@@ -181,9 +215,6 @@ body {
   display: flex;
   align-items: stretch;
   height: 4rem;
-  border: 1px solid #d6d6d6;
-  border-radius: 10px;
-  background-color: #fff;
 }
 .is_suggest .search-input {
   border-radius: 10px 10px 0 0;
@@ -192,7 +223,8 @@ body {
 .search-txt {
   font-size: 100%;
   flex: 1;
-  border: none;
+  border: 1px solid #9a9a9a;
+  border-radius: 10px;
   -webkit-appearance: none;
   appearance: none;
   padding: .2rem .2rem .2rem 1rem;
@@ -258,4 +290,8 @@ output[name="result3"]{
 .text-flex{
   display: flex;
 }
-.ui-autocomplete { max-height: 200px; overflow-y: scroll; overflow-x: hidden;}
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  }
