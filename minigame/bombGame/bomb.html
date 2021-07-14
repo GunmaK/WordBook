@@ -35,32 +35,50 @@
                 <form class="strbtns">
                     <!--スタートボタン-->
                     <input type="text" class="strbtns-child" id="tm2" readonly value="">
+                    <input type="button" class="strbtns-child" id="howtoBtn" value="遊び方" onclick="Howto();">
+                    <img src="/minigame/bombGame/images/Howto.jpg" id="strbtns-img" style="visibility: hidden;" onclick="this.style.visibility='hidden';">
                     <input type="button" class="strbtns-child" id="ankiBtn" onclick="this.blur();strGame();" value="記憶開始">
-                    <input type="button" class="strbtns-child" id="kaijoBtn" style="display: none;" onclick="this.blur();setGame();" value="解除開始">
+                    <input type="button" class="strbtns-child" id="kaijoBtn" style="display: none;width: 50vw; height: 20vh; margin: 10vh 15vw;" onclick="this.blur();setGame();" value="解除開始">
                 </form>
                 <!--/strbtns-->
             </div>
             <div class="ankihyo" style="display: none;">
-                <form name="hyo">
+                <form name="hyo" class="ankihyo-flex-top">
                     <!--暗記表-->
                     <!--8個の英単語-日本語の表を作成-->
                     <div id="ankihyo">
-                        <input type="text" name="en" value="1eng" readonly>
-                        <input type="text" name="jp" value="1jpn" readonly>
-                        <input type="text" name="en" value="2eng" readonly>
-                        <input type="text" name="jp" value="2jpn" readonly>
-                        <input type="text" name="en" value="3eng" readonly>
-                        <input type="text" name="jp" value="3jpn" readonly>
-                        <input type="text" name="en" value="4eng" readonly>
-                        <input type="text" name="jp" value="4jpn" readonly>
-                        <input type="text" name="en" value="5eng" readonly>
-                        <input type="text" name="jp" value="5jpn" readonly>
-                        <input type="text" name="en" value="6eng" readonly>
-                        <input type="text" name="jp" value="6jpn" readonly>
-                        <input type="text" name="en" value="7eng" readonly>
-                        <input type="text" name="jp" value="7jpn" readonly>
-                        <input type="text" name="en" value="8eng" readonly>
-                        <input type="text" name="jp" value="8jpn" readonly>
+                        <div class="anki-flex-double">
+                            <input type="text" name="en" value="1eng" readonly>
+                            <input type="text" name="jp" value="1jpn" readonly>
+                        </div>
+                        <div class="anki-flex-double">
+                            <input type="text" name="en" value="2eng" readonly>
+                            <input type="text" name="jp" value="2jpn" readonly>
+                        </div>
+                        <div class="anki-flex-double">
+                            <input type="text" name="en" value="3eng" readonly>
+                            <input type="text" name="jp" value="3jpn" readonly>
+                        </div>
+                        <div class="anki-flex-double">
+                            <input type="text" name="en" value="4eng" readonly>
+                            <input type="text" name="jp" value="4jpn" readonly>
+                        </div>
+                        <div class="anki-flex-double">
+                            <input type="text" name="en" value="5eng" readonly>
+                            <input type="text" name="jp" value="5jpn" readonly>
+                        </div>
+                        <div class="anki-flex-double">
+                            <input type="text" name="en" value="6eng" readonly>
+                            <input type="text" name="jp" value="6jpn" readonly>
+                        </div>
+                        <div class="anki-flex-double">
+                            <input type="text" name="en" value="7eng" readonly>
+                            <input type="text" name="jp" value="7jpn" readonly>
+                        </div>
+                        <div class="anki-flex-double">
+                            <input type="text" name="en" value="8eng" readonly>
+                            <input type="text" name="jp" value="8jpn" readonly>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -81,8 +99,8 @@
                 <form name="rebtn" style="display: none;">
                     <div class="endfase-rebtn-flex">
                         <input type="button" name="re" value="もういっかい！" onclick="location.href='bomb.html'">
-                        <!--トップに戻るボタン-->
-                        <input type="button" name="back" value="やめる" onclick='location.href="../minigametop.html"'>
+                        <!--ミニゲームトップに戻るボタン-->
+                        <input type="button" name="back" value="やめる" onclick='location.href="../ ミニゲームトップページ .html"'>
                     </div>
                 </form>
             </div>
@@ -235,6 +253,7 @@
                 var elem = document.getElementsByClassName("ankihyo");
                 elem[0].style.display = "block";
                 document.getElementById("ankiBtn").style.display = "none"; //記憶開始ボタンを隠す
+                document.getElementById("howtoBtn").style.visibility="hidden";
                 document.getElementById("tm2").style.display = "block"; //タイマーを表示
                 Dateset(); //暗記表に単語データをセット
                 strmemoTime = new Date().getTime();
@@ -693,6 +712,10 @@
                     document.getElementById("b" + i).disabled = true;
                 }
                 document.getElementById("moduleObj").style.visibility = "visible";
+            }
+
+            function Howto(){
+                document.getElementById("strbtns-img").style.visibility="visible";
             }
         </script>
     </div>

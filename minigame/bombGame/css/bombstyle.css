@@ -90,11 +90,11 @@ input[type="button"]:hover {
 .content {
     position: fixed;
     width: 80vw;
-    height: 70vw;
+    height: auto;
     border: 1px #000 solid;
     background-color: rgb(128, 128, 128, 0.9);
     z-index: 9900;
-    margin: 5vw 10vw;
+    margin: 5vh 10vw;
 }
 
 .strbtns-contents {
@@ -108,24 +108,40 @@ input[type="button"]:hover {
 }
 
 .strbtns-child {
-    padding: 1vw;
+    text-align: center;
 }
 
 .strbtns-contents .strbtns-child:nth-child(1) {
     width: 60vw;
-    margin: 5vw 10vw;
+    height: 5vh;
+    margin: 5vh 10vw;
+    font-size: 4vh;
 }
-
 .strbtns-contents .strbtns-child:nth-child(2) {
-    width: 50vw;
-    height: 20vw;
-    margin: 10vw 15vw;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10%;
 }
-
 .strbtns-contents .strbtns-child:nth-child(3) {
     width: 50vw;
-    height: 20vw;
-    margin: 10vw 15vw;
+    height: 20vh;
+    margin: 10vh 15vw;
+}
+
+.strbtns-contents .strbtns-child:nth-child(4) {
+    width: 50vw;
+    height: 20vh;
+    margin: 10vh 15vw;
+}
+
+#strbtns-img{
+    position: fixed;
+    top: 10vmin;
+    width: 80vmin;
+    align-items: center;
+    border: #000 solid;
+    /*overflow: hidden;*/
 }
 
 .endfase-contents {
@@ -144,36 +160,50 @@ input[type="button"]:hover {
 
 .endfase-re-flex .endfase-re-child:nth-child(1) {
     width: 60vw;
-    height: 10vw;
+    height: 10vh;
     text-align: center;
-    font-size: 5vw;
-    margin: 15vw 10vw 5vw 10vw;
+    font-size: 5vh;
+    margin: 10vh 10vw 5vh 10vw;
 }
 
 .endfase-re-flex .endfase-re-child:nth-child(2) {
     width: 40vw;
-    height: 5vw;
+    height: 5vh;
     margin: 0 20vw;
 }
 
 .endfase-re-flex .endfase-re-child:nth-child(3) {
     width: 40vw;
-    height: 5vw;
+    height: 5vh;
     margin: 0 20vw;
 }
 
 .endfase-re-flex .endfase-re-child:nth-child(4) {
     width: 40vw;
-    height: 5vw;
-    margin: 0 20vw 5vw 20vw;
+    height: 5vh;
+    margin: 0 auto 5vh auto;
 }
 
 .endfase-rebtn-flex {
     position: relative;
     display: flex;
+    margin: 0 20vw 5vh 5vw;
+    float: right;
 }
-
-
+/*---------------------/
+/        暗記表        /
+/---------------------*/
+.ankihyo-flex-top {
+    display: flex;
+}
+#ankihyo{
+    margin: 0 auto 5vh auto;
+}
+input[name="en"],input[name="jp"]{
+    width: 30vw;
+    height: 2vh;
+    font-weight: bold;
+}
 /*---------------------/
 / モジュール全体の構成  /
 /---------------------*/
