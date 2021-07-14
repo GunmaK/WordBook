@@ -41,11 +41,11 @@ Root
   ┃    ┣ bomb.html
   ┃    ┗ minigame.html
   ┗ kensaku
-    ┣ japanese.js
-    ┣ jquery.js
-    ┣ jquery-ui.css
-    ┣ jquery-ui.js
-    ┣ kensaku.css
-    ┣ kensaku.html
-    ┗ main.js
+     ┣ japanese.js
+     ┣ jquery.js
+     ┣ jquery-ui.css
+     ┣ jquery-ui.js
+     ┣ kensaku.css
+     ┣ kensaku.html
+     ┗ main.js
 ~~~
