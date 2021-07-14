@@ -9,7 +9,11 @@
 Root
   ┣ [kakuninmondai]
   ┣ minigame
-  ┃  ┣ [sinkeisuijaku]
+  ┃  ┣ cardgame
+  ┃    ┣ cardgame.css
+  ┃    ┣ cardgame.html
+  ┃    ┣ cardgame01.js
+  ┃    ┗ cardgame02.js
   ┃  ┣ [numeron]
   ┃  ┗ bombGame
   ┃    ┣ css
