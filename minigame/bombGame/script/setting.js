@@ -5,7 +5,7 @@ var flg_mo3_2 = 0;//モジュール3用フラグ
 var module_count = 3;//モジュール数
 var targetJp; //countの内部target
 var targetEn; //countの外部target(value)
-var ankitime = 5;//暗記時間(20sec)
+var ankitime = 20;//暗記時間(20sec)
 var kaijotime = 80;//解除時間(80sec)
 var soundtime = 10;//ﾋﾟｯﾋﾟｯタイム
 var cotime =kaijotime-soundtime;
