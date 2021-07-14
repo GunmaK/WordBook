@@ -2,8 +2,6 @@
 7/5 アカウント作成 from km
 
 # ファイル
-<details><summary>展開</summary><div>
-  
 ~~~
 
 Root
@@ -51,4 +49,3 @@ Root
     ┣ kensaku.html
     ┗ main.js
 ~~~
-</div></details>
