@@ -9,7 +9,11 @@
 Root
   ┣ [kakuninmondai]
   ┣ minigame
-  ┃  ┣ [sinkeisuijaku]
+  ┃  ┣ cardgame
+  ┃    ┣ cardgame.css
+  ┃    ┣ cardgame.html
+  ┃    ┣ cardgame01.js
+  ┃    ┗ cardgame02.js
   ┃  ┣ [numeron]
   ┃  ┗ bombGame
   ┃    ┣ css
@@ -23,6 +27,7 @@ Root
   ┃    ┃  ┣ bomb.png
   ┃    ┃  ┣ diamond-plate.jpg
   ┃    ┃  ┣ favicon.ico
+  ┃    ┃  ┣ Howto.jpg
   ┃    ┃  ┗ metal-doted.jpg
   ┃    ┣ media
   ┃    ┃  ┣ beep.mp3
